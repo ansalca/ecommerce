@@ -1,5 +1,13 @@
 .body{
     font-family:'Roboto',sans-serif;
+    min-height: 100vh; /* Ensure body stretches to at least the height of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 50px;
 }
 .nav-item{
     letter-spacing: .2em;
@@ -15,10 +23,17 @@
     background-color: #f0f9fa;
     height:60px;
     width: 100%;
+    position: fixed; /* this sets the footer fixed in the bottom.*/
+    bottom: 0;
+    color: #333;
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+    padding: 10px;
 }
 .my_footer p{
     padding-top:20px;
     font-size:14px;
+    position: fixed-bottom;
 }
 
 /*** category page ***/
@@ -43,6 +58,10 @@
 }
 .my_bottom_margin{
     margin_bottom:10px;
+}
+.card{
+    padding:10px;
+    margin-bottom: 20px;
 }
 .card-body h4{
     font-size:14px;
